@@ -43,9 +43,10 @@ app.get('/about', (req, res) => {
   })
 })
 
-app.get('/bad', (req,res) => {
-  res.send({
-    error: 'Bad request'
+app.get('/maintenance', (req,res) => {
+  res.render('maintenance', {
+    title: 'Maintenance',
+    message: 'Welcome again'
   })
 })
 
